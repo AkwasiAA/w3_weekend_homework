@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+
+<title>Rock, Paper, Scissors: The Outcome!</title>
+
+<header><strong> The Outcome....</strong></header>
+<main>
+    <section>
+        <h1>To The Victor Goes The Spoils!</h1>
+        <br>
+
+        <p> Player 1 choice: <strong>{{ choice_1 }}</strong>, Player 2 choice: <strong>{{ choice_2 }}</strong></p>
+        <br>
+
+        <h2>{{ winner }}!</h2>
+
+    </section>
+</main>
+{% endblock %}
